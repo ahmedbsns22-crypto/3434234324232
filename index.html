@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Aroma Ladies Spa — Reel</title>
+<style>
+:root{--ch:#ead9c0;--rg:#c08a84;--iv:#f6efe4;--bl:#e9c9c0}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%;background:#120f0e;overflow:hidden}
+body{display:flex;align-items:center;justify-content:center;font-family:"Noto Naskh Arabic","Geeza Pro","SF Arabic","Segoe UI",Tahoma,Arial,sans-serif;color:var(--iv);-webkit-user-select:none;user-select:none}
+#stage{position:relative;width:540px;height:960px;flex:none;overflow:hidden;background:radial-gradient(120% 80% at 50% 30%,#3d3430 0%,#2a2321 55%,#1b1615 100%);transform-origin:center}
+#cam{position:absolute;inset:0;transition:transform .6s cubic-bezier(.6,0,.2,1);will-change:transform}
+.a{position:absolute;left:0;right:0;text-align:center}
+.pp{opacity:0;transform:scale(.6) translateY(24px);will-change:transform,opacity}
+.pp.on{opacity:1;transform:none;transition:transform .55s cubic-bezier(.34,1.56,.64,1),opacity .25s}
+.fl{opacity:0;transform:translateX(-140px)}.fr{opacity:0;transform:translateX(140px)}.fd{opacity:0;transform:translateY(-220px)}
+.fl.on,.fr.on,.fd.on{opacity:1;transform:none;transition:transform .6s cubic-bezier(.3,1.45,.5,1),opacity .25s}
+.out{opacity:0!important;transform:translateX(-90px) scale(.92)!important;transition:transform .5s ease-in,opacity .4s!important}
+.bub{display:inline-block;max-width:420px;padding:18px 24px;border-radius:28px;background:rgba(234,217,192,.1);border:1px solid rgba(192,138,132,.4);font-size:31px;line-height:1.6;color:var(--iv)}
+.bub b{display:inline-block;font-weight:700;color:var(--ch)}
+.beat{animation:beat .9s cubic-bezier(.3,1.6,.5,1)}
+@keyframes beat{0%{transform:scale(1)}35%{transform:scale(1.4)}100%{transform:scale(1)}}
+.ln{left:50%;width:260px;margin-left:-130px;height:2px;background:linear-gradient(90deg,transparent,var(--ch) 30%,var(--rg) 70%,transparent);transform:scaleX(0);transform-origin:left}
+.ln.on{transform:scaleX(1);transition:transform .8s cubic-bezier(.5,0,.2,1)}
+.em{font-size:64px;line-height:1}
+.flt.on{animation:flt 3.2s ease-in-out infinite}
+@keyframes flt{50%{transform:translateY(-14px)}}
+#chat{top:240px;padding:0 36px;display:flex;flex-direction:column;gap:20px;transform-origin:50% 0;transition:transform .8s cubic-bezier(.6,0,.2,1),opacity .6s}
+#chat.mini{transform:translateY(-70px) scale(.5);opacity:.4}
+#chat.gone{opacity:0}
+.row{display:flex;align-items:center;gap:12px;position:relative}
+.row.r{justify-content:flex-start}.row.l{justify-content:flex-end}
+.mv{transform:translateX(34px)!important;transition:transform .6s cubic-bezier(.3,1.3,.5,1)!important}
+#notif{top:300px;padding:0 40px}
+#notif .bub{background:rgba(42,35,33,.85);border:1px solid rgba(234,217,192,.35);display:flex;align-items:center;gap:16px;padding:22px 26px;font-size:34px;text-align:right}
+#ring{position:absolute;left:50%;top:360px;width:420px;height:150px;margin:-75px 0 0 -210px;border:2px solid var(--rg);border-radius:40px;opacity:0}
+#ring.on{animation:ring .9s ease-out}
+@keyframes ring{0%{opacity:.8;transform:scale(.9)}100%{opacity:0;transform:scale(1.25)}}
+#q{top:520px;font-size:62px;font-weight:700;color:var(--ch);letter-spacing:.02em}
+#l1{top:610px}
+.big{font-size:56px;font-weight:700;color:var(--ch);line-height:1.5}
+.big em{font-style:normal;display:inline-block;color:var(--rg)}
+#s3{inset:0}
+#lg1{position:absolute;top:34px;right:34px;width:58px;height:auto;opacity:0;transition:opacity .8s}
+#lg1.on{opacity:.9}
+#lg2{top:360px}#lg2 img,#lg3 img{width:190px;height:auto;display:block;margin:0 auto}
+#lg2.on img{animation:sh 1.1s ease-in-out}
+@keyframes sh{50%{filter:brightness(1.45)}}
+#b4{top:380px;padding:0 36px}#b4 .bub{font-size:38px;max-width:440px}
+#fin{inset:0}
+#fin .a{opacity:0;transform:translateY(24px)}
+#fin .a.on{opacity:1;transform:none;transition:opacity .8s ease,transform .9s cubic-bezier(.2,.8,.2,1)}
+#lg3{top:250px}
+#nm{top:420px;font-size:46px;color:var(--ch);letter-spacing:.14em;font-family:Georgia,"Times New Roman",serif;direction:ltr}
+#tg{top:500px;font-size:44px;font-weight:700;color:var(--iv)}
+#l3{top:580px}
+#cta{top:620px;font-size:36px;color:var(--rg);font-weight:700}
+#ph{top:690px;font-size:22px;color:var(--ch);opacity:.7;letter-spacing:.12em;direction:ltr}
+#fin #ph.on{opacity:.7}
+.pt{position:absolute;width:6px;height:6px;border-radius:50%;background:var(--ch);opacity:0;animation:pt .9s ease-out forwards}
+@keyframes pt{0%{opacity:.9;transform:translate(0,0)}100%{opacity:0;transform:translate(var(--dx),var(--dy)) scale(.4)}}
+</style>
+</head>
+<body>
+<div id="stage"><div id="cam">
+<img id="lg1" class="lg" src="logo.png" alt="">
+<div id="ring"></div>
+<div id="notif" class="a"><div class="bub fd" id="n1"><span class="em" style="font-size:54px">👩🏻‍🦰</span><span>لو جسمج يقدر يطرش لج <b id="ms">مسج</b>…</span></div></div>
+<div id="q" class="a pp">شو بيقول؟ 👀</div><div id="l1" class="a ln"></div>
+
+<div id="chat" class="a">
+ <div class="row r"><div class="bub fr" id="b2">تكفين… <b id="ab">أبي أرتاح</b> شوي! 😮‍💨</div><span class="em flt pp" id="e1" style="font-size:52px">😮‍💨</span></div>
+ <div class="row l"><div class="bub fl" id="b3">من زمان ما دلّعتي عمرج! 👀</div></div>
+</div>
+
+<div id="s3" class="a">
+ <div class="a ln" id="l2" style="top:250px"></div>
+ <div class="a big pp" id="t3a" style="top:290px;font-size:46px">يمكن جسمج محتاج…</div>
+ <div class="a em flt pp" id="e2" style="top:380px;font-size:130px">💆🏻‍♀️</div>
+ <div class="a big pp" id="t3b" style="top:560px">مساج و<em id="rh">راحة</em>… 🤍</div>
+ <div class="a big pp" id="t3c" style="top:650px;font-size:46px">وشوية عناية لج. ✨</div>
+ <span class="em flt pp" id="f1" style="position:absolute;left:70px;top:420px;font-size:40px">🫧</span>
+ <span class="em flt pp" id="f2" style="position:absolute;right:70px;top:340px;font-size:40px">🌸</span>
+</div>
+
+<div id="lg2" class="a pp"><img class="lg" src="logo.png" alt=""></div>
+<div id="b4" class="a"><div class="bub pp" id="b4i">يلا، هالمرة لا تسحبين على المساج! 😂🤍</div></div>
+
+<div id="fin" class="a">
+ <div id="lg3" class="a"><img class="lg" src="logo.png" alt=""></div>
+ <div id="nm" class="a">Aroma Ladies Spa</div>
+ <div id="tg" class="a">دلّعي عمرج شوي. 🤍</div>
+ <div id="l3" class="a ln"></div>
+ <div id="cta" class="a">احجزي موعدج</div>
+ <div id="ph" class="a">0544450244</div>
+</div>
+</div></div>
+<script>
+(function(){
+var $=function(i){return document.getElementById(i)},st=$('stage'),cam=$('cam');
+function fit(){st.style.transform='scale('+Math.min(innerWidth/540,innerHeight/960)+')'}
+addEventListener('resize',fit);fit();
+document.querySelectorAll('.lg').forEach(function(i){i.onerror=function(){i.style.visibility='hidden'}});
+function on(){for(var i=0;i<arguments.length;i++)$(arguments[i]).classList.add('on')}
+function off(){for(var i=0;i<arguments.length;i++)$(arguments[i]).classList.remove('on')}
+function cm(s,ox,oy,tx){cam.style.transformOrigin=ox+'px '+oy+'px';cam.style.transform='translateX('+(tx||0)+'px) scale('+s+')'}
+function burst(x,y){for(var i=0;i<9;i++){var p=document.createElement('span');p.className='pt';p.style.left=x+'px';p.style.top=y+'px';var a=i/9*6.28,d=50+Math.random()*50;p.style.setProperty('--dx',Math.cos(a)*d+'px');p.style.setProperty('--dy',Math.sin(a)*d+'px');cam.appendChild(p);setTimeout(function(q){q.remove()},950,p)}}
+function beat(i){var e=$(i);e.classList.remove('beat');void e.offsetWidth;e.classList.add('beat')}
+var ids=['n1','q','l1','b2','e1','b3','l2','t3a','e2','t3b','t3c','f1','f2','lg1','lg2','b4i','l3','lg3','nm','tg','cta','ph'];
+function reset(){ids.forEach(function(i){$(i).classList.remove('on','out','mv','beat')});$('ring').classList.remove('on');
+ $('chat').className='a';$('s3').className='a';$('notif').className='a';$('q').className='a pp';$('l1').className='a ln';
+ cm(1,270,480,0);document.querySelectorAll('.pt').forEach(function(p){p.remove()})}
+var cues=[
+[0,function(){on('n1','lg1');$('ring').classList.add('on')}],
+[.35,function(){burst(270,360)}],
+[1.2,function(){cm(1.14,270,430,0);on('q')}],
+[1.45,function(){beat('ms')}],
+[1.7,function(){on('l1')}],
+[2.5,function(){cm(1,270,480,0)}],
+[2.95,function(){$('n1').classList.add('out');$('q').classList.add('out');$('l1').classList.add('out');burst(270,480)}],
+[3.15,function(){on('b2')}],
+[3.4,function(){on('e1')}],
+[4.2,function(){cm(1.5,330,300,0);beat('ab')}],
+[5,function(){cm(1,270,480,0)}],
+[5.1,function(){$('b2').classList.add('mv')}],
+[5.3,function(){cm(1,270,480,-26);on('b3')}],
+[5.9,function(){cm(1,270,480,0)}],
+[7,function(){$('chat').classList.add('mini');burst(270,300)}],
+[7.3,function(){on('l2')}],
+[7.6,function(){on('t3a')}],
+[7.9,function(){on('e2');cm(1.04,270,480,-20)}],
+[8.2,function(){on('f1')}],
+[8.45,function(){on('t3b');on('f2')}],
+[9.2,function(){on('t3c')}],
+[9.8,function(){cm(1.4,300,575,0);beat('rh')}],
+[10.6,function(){cm(1,270,480,0)}],
+[11.1,function(){$('s3').classList.add('out');burst(270,420)}],
+[11.3,function(){on('lg2')}],
+[12.4,function(){$('lg2').classList.add('out')}],
+[12.6,function(){$('chat').classList.add('gone');on('b4i')}],
+[14.4,function(){$('b4i').classList.add('out')}],
+[14.8,function(){on('lg3');burst(270,330)}],
+[15.2,function(){on('nm')}],
+[15.6,function(){on('tg')}],
+[16,function(){on('l3')}],
+[16.3,function(){on('cta')}],
+[16.7,function(){on('ph')}]
+];
+var run=0;
+function play(){var id=++run,i=0,t0=0;reset();
+ function go(){t0=performance.now();(function f(n){if(id!==run)return;var t=(n-t0)/1000;while(i<cues.length&&cues[i][0]<=t)cues[i++][1]();if(i<cues.length)requestAnimationFrame(f)})(t0)}
+ var imgs=Array.prototype.slice.call(document.querySelectorAll('.lg')),done=false;
+ function start(){if(done)return;done=true;requestAnimationFrame(go)}
+ Promise.all(imgs.map(function(m){return m.decode?m.decode().catch(function(){}):0})).then(start);setTimeout(start,700)}
+st.addEventListener('click',play);
+addEventListener('keydown',function(e){if(e.key==='r'||e.key==='R'||e.key===' ')play()});
+play();
+})();
+</script>
+</body>
+</html>
